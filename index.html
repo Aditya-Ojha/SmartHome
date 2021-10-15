@@ -18,8 +18,8 @@
                 <div class="timetemp">
                     <div class="time">
                         <i class="far fa-clock" style="font-size: 50px; padding: 10px;"></i>
-                        <h3>Tuesday, 15-09-2021</h3>
-                        <h1>10:12:30<span style="font-size: 30px; padding:5px; font-weight: lighter;">AM</span></h1>
+                        <h3><span id="day"></span>, <span id="date"></span>-<span id="month"></span>-<span id="year"></span></h3>
+                        <h1><span class="clock"></span>     <span class="ampm" style="font-size: 30px; padding:5px; font-weight: lighter;"></span></h1>
                     </div>
                     <div class="room">
                         <h1 class="roomname">Living Room</h1>
@@ -46,33 +46,37 @@
                             <span class="slider round"></span>
                         </label>
                     </div>
-                    <div class="fanbulb">
+                    <!-- <div class="fanbulb">
                         <h2>FAN</h2>
                         <i class="fas fa-fan"></i>
                         <label class="switch">
                             <input type="checkbox">
                             <span class="slider round"></span>
                         </label>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="right">
                 <div class="weather">
-                    <input type="search" placeholder= "🌥️Search"> 
+                    <input class="searchBar" type="search" placeholder= "🌥️Search"> 
                     <div class="cityname">
-                        <i class="fas fa-street-view"></i>
-                        <h1>Delhi</h2>
+                        <div class="weatherIcon">
+                            <!-- <i class="fas fa-street-view"></i> -->
+                            <img src="" alt="Weather" class="icon">
+                            <h4 class="description"></h4>
+                        </div>
+                        <h1 class="city">Delhi</h2>
                     </div>
                     <div class="weathertemp">
-                        <h3>Temp - 37 °C | Humidity - 10%</h3>
+                        <h3><span class="citytemp"></span> | <span class="humidity"></span></h3>
                     </div>
                     <div class="minmax">
-                        <h3>Min - 26 °C | Max - 34 °C</h3>
+                        <h3><span class="temp_min"></span> | <span class="temp_max"></span></h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
